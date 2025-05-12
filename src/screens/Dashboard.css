@@ -1,9 +1,129 @@
-/* src/screens/Dashboard.css 
-ESTILO MÌNIMO (TEMPORÀRIO)
-*/
-.card {
-  background: white;
+/* Reset & base */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5faff;
+  color: #12181e;
+}
+
+/* Layout principal */
+.dashboard-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #13678a;
+  color: white;
+  padding: 1rem;
+  transition: width 0.3s ease;
+  position: relative;
+}
+.sidebar.closed {
+  width: 60px;
+}
+.toggle-menu {
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  background-color: #13678a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+.menu-section h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.menu-section ul {
+  list-style: none;
+  padding: 0;
+}
+.menu-section li,
+.menu-section button {
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Conteúdo principal */
+.dashboard-main {
+  flex-grow: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+}
+.header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Grid de widgets */
+.widget-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Widget padrão */
+.widget {
+  background-color: #ffffff;
   border-radius: 16px;
   padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+.widget:hover {
+  transform: translateY(-4px);
+}
+.widget h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+.widget p,
+.widget li {
+  font-size: 0.95rem;
+}
+.widget button {
+  margin-top: 1rem;
+  background-color: #13678a;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.widget button:hover {
+  background-color: #5195ad;
+}
+
+.progress-placeholder {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 12px;
+  color: #999;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
 }
