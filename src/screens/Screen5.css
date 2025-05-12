@@ -1,0 +1,99 @@
+.radio-option {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 10px 16px;
+  margin: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.radio-option input {
+  display: none;
+}
+
+.radio-option.selected {
+  background-color: #27acf1;
+  color: white;
+  font-weight: bold;
+  border-color: #27acf1;
+}
+
+.error-border {
+  border-color: red !important;
+}
+
+.range-slider {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.slider-labels,
+.slider-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.primary-btn {
+  background-color: #27acf1;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.primary-btn:hover {
+  background-color: #1d8ec2;
+}
+
+.title-section {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.screen {
+  padding: 2rem;
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  max-width: 700px;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.question-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.options-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}

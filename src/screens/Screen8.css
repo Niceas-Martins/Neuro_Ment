@@ -1,0 +1,23 @@
+/* Screen8.css */
+
+#screen-8 {
+  padding: 2rem 1.5rem;
+  color: rgb(36, 35, 35);
+}
+
+.primary-btn {
+  background-color: #9aeba3;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #7ad18b;
+}
+
+@media (min-width: 768px) {
+  #screen-8 {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

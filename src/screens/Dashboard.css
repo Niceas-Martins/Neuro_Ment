@@ -1,0 +1,9 @@
+/* src/screens/Dashboard.css 
+ESTILO MÌNIMO (TEMPORÀRIO)
+*/
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
